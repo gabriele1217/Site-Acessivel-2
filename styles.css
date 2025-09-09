@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+:root {
+    --azul: #1E90FF; /* Azul destaque */
+    --preto: #111111;
+    --cinza-claro: #F4F4F4;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+    color: var(--preto);
+}
+
+header {
+    background-color: #000000;
+    color: white;
+}
+
+.nav-link {
+    color: var(--azul);
+    font-weight: 600;
+}
+.nav-link:hover {
+    color: white;
+}
+
+.inicio-fundo {
+    background: url('img/bg-fashion.jpg') no-repeat center center/cover;
+    border-radius: 20px;
+    width: 100%;
+    height: 600px;
+    padding: 40px;
+    position: relative;
+}
+
+.img-inicio {
+    position: absolute;
+    right: 2rem;
+    bottom: 0;
+    width: 30rem;
+    max-width: 100%;
+}
+
+.esquerda-conteudo h1 {
+    text-shadow: -3px 3px var(--azul);
+}
+
+.botao-inicio {
+    background-color: var(--azul);
+    border-radius: 30px;
+    border: none;
+    color: white;
+    width: 14em;
+    height: 3em;
+    font-weight: bold;
+}
+.botao-inicio:hover {
+    background-color: #0d6efd;
+}
+
+h2 {
+    font-family: 'Lemon', serif;
+    font-size: 2.5em;
+    color: var(--azul);
+}
+
+#colecao {
+    background-color: var(--cinza-claro);
+    padding: 5rem 2rem;
+    border-radius: 20px;
+}
+
+#galeria {
+    background-color: #ffffff;
+    padding: 4rem 0;
+}
+
+.fundo-galeria {
+    background: url('img/pattern-azul.png') bottom right no-repeat;
+    background-size: 180px 180px;
+}
+
+#contato {
+    background-color: var(--preto);
+    color: white;
+    padding: 4rem 0;
+}
+
+.formulario {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    color: var(--preto);
+}
+
+.formulario button {
+    background-color: var(--azul);
+    border: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.formulario button:hover {
+    background-color: #0d6efd;
+}
+
+.form-control {
+    background-color: #f2f2f2;
+}
+
+footer {
+    background-color: var(--preto);
+    color: white;
+}
+
+footer i {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: var(--azul);
+}
+footer i:hover {
+    color: white;
+}
+
+/* Acessibilidade */
+.menu-acessibilidade {
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+}
+.rotacao-botao {
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+.opcoes-acessibilidade {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.opcoes-acessibilidade button {
+    margin-bottom: 5px;
+}
+.apresenta-lista {
+    display: none;
+}
+
+/* --- Acessibilidade --- */
+
+/* Esconde as opções até abrir */
+.opcoes-acessibilidade {
+  display: none;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+/* Quando ativar */
+.opcoes-acessibilidade.ativa {
+  display: flex;
+}
+
+/* Alto contraste */
+.alto-contraste {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.alto-contraste a,
+.alto-contraste p,
+.alto-contraste h1,
+.alto-contraste h2,
+.alto-contraste h3 {
+  color: #fff !important;
+}
+
+.alto-contraste a {
+  color: #0ff !important;
+}
